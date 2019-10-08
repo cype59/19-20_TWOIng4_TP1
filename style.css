@@ -1,26 +1,39 @@
+body {
+    background-color: #c9c0c03f;
+    font-family: Arial, sans-serif;
+}
+
 header {
     width: 100%;
     height: 100px;
-    background: #1a1a1a;
+    background: #111111;
     position: fixed;
     top: 0px;
     left: 0px;
-    font-family: Arial, sans-serif;
+    z-index: 1000;
+}
+
+.anchor{
+    display: block;
+    height: 100px; 
+    margin-top: -100px;
+    visibility: hidden;
 }
 
 .menu .home {
     position: absolute;
     float: left;
-    margin-top: 20px;
+    margin-top: 35px;
     font-size: 170%;
     text-decoration: none;
-    color: white;
     margin-left: 2%;
-}
+    color: #d9d9d9;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);}
 
 .liste_menu {
     text-align: center;
-    margin-left: 50%;
+    float: right;
+    width: 760px;
 }
 
 .liste_menu li {
@@ -42,3 +55,120 @@ header {
     text-shadow: 0px 0px 3px #FFFFFF;    
     transition: all 0.5s ease-out;
 }
+
+.main .boite {
+    margin-top: 300px;
+}
+
+.boite {
+    height: 400px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 4px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 35px rgba(153, 153, 153, 0.1);
+}
+
+.main .boite {
+    margin-top: 200px;
+}
+
+.profil {
+    max-height: 400px;
+    float: left;
+}
+
+.contenuProfil {
+    margin-left: 50%;
+}
+
+.contenuProfil h1, .contenuProfil h4{
+    color: #000530;   
+    font-weight: bold; 
+}
+
+.contenuProfil p {
+    margin-top: -10px;
+}
+
+.separation-rouge {
+    height: 3px;
+    width: 60%;
+    margin-top: -20px;
+    background-color: rgb(182, 0, 0);
+    margin-bottom: 10%;
+}
+
+.experience, .education {
+    text-align: center;
+}
+
+.experience h1, .education h1 {
+    margin-bottom: 5%;
+}
+
+.experience {
+    margin-bottom: 5%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: rgb(182, 0, 0);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+.container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+  
+.container::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -7px;
+    background-color: rgb(182, 0, 0);
+    top: 31px;
+    border-radius: 50%;
+    z-index: 2;
+}
+  
+.left {
+    left: -81px;
+    text-align: right;
+}
+  
+.right {
+    left: 50%;
+    text-align: left;
+}
+      
+.right::after {
+    left: -9px;
+    z-index: 2;
+}
+
+.content h3 {
+    color: rgb(182, 0, 0);
+}
+  
+
+
+
