@@ -1,6 +1,8 @@
 body {
     background-color: #c9c0c03f;
     font-family: 'Roboto Condensed';
+    margin:0;
+    padding:0;
 }
 
 header {
@@ -120,10 +122,9 @@ header {
     margin-top: 70px;
     margin-bottom: 40px;
     background-color: #111111;
-
 }
 
-.experience h1, .education h1, .competences h1, .loisirs h1 {
+.experience h1, .education h1, .competences h1, .loisirs h1, .contact h1 {
     margin-bottom: 4%;
     text-align: center;
 
@@ -249,7 +250,7 @@ header {
 }
 
 .web:before, .web:after {
-    width: 75%;
+    width: 80%;
 }
 
 .c:before, .c:after {
@@ -277,6 +278,7 @@ header {
 .carousel {
     position: relative;
     margin-top: 26px;
+    margin-bottom: 100px;
     height: 400px;
     width: 60%;
     margin-left: 20%;
@@ -405,7 +407,53 @@ header {
 .drapeaux_bas {
     margin-top: 40px;
 }
-      
+
+/** Contact */
+
+.contact-gauche {
+    width: 50%;
+    background-color: #111111;
+    padding-top: 20px;
+    color: white;
+    height: 400px;
+    float: left;
+    text-align: center;
+}
+
+.contenu-infos{
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0px 0em;
+}
+
+.contenu-infos p {
+    text-align: left;
+}
+
+.contact-droit {
+    background-color: #c9c9c9;
+    padding-top: 20px;
+    color: #111111;
+    height: 400px;
+    width: 50%;
+    float: right;
+}
+
+.separation-rouge-infos {
+    height: 3px;
+    width: 30%;
+    margin-top: 15px;
+    margin-bottom: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: rgb(182, 0, 0);
+}
+
+
+
+
 
 
 
