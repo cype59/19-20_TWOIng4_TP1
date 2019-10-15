@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/solid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/fontawesome.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <title>CV Cyril Pierron</title>
 </head>
@@ -19,11 +21,11 @@
         <nav class="menu">
             <a href="#" class="home">Accueil</a>            
             <ul class="liste_menu">
-                <li><a href="#experience">EXPÉRIENCE</a></li>
-                <li><a href="#education"></i>FORMATION </a></li>
-                <li><a href="#competences">COMPÉTENCES</a></li>
-                <li><a href="#loisirs">LOISIRS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#experience" class="scroll">EXPÉRIENCE</a></li>
+                <li><a href="#education" class="scroll"></i>FORMATION </a></li>
+                <li><a href="#competences" class="scroll">COMPÉTENCES</a></li>
+                <li><a href="#loisirs" class="scroll">LOISIRS</a></li>
+                <li><a href="#contact" class="scroll">CONTACT</a></li>
             </ul>
         </nav>        
     </header>
@@ -165,7 +167,12 @@
                     </div>
                     <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
                     <div class="carousel-item">
-                        <h1>Cinéma</h1>
+                        <h1>Cinéma (projet de court métrage au Bac)</h1>
+                        <video controls="controls">
+                            <source src="film.mp4" type="video/mp4" />
+                            <source src="film.webm" type="video/webm" />
+                            Votre navigateur ne prend pas en charge les vidéos
+                        </video>
                     </div>
                     <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
                     <div class="carousel-item">
@@ -243,5 +250,6 @@
         </footer>
 
     </main>
+    <script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="script.js"></script>
 </body>
 </html>

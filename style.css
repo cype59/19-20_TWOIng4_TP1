@@ -442,6 +442,15 @@ header {
     margin-top: 40px;
 }
 
+video {
+    position: absolute;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -2%;
+}
+
 /** INFOS */
 
 .contact-gauche {
