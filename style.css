@@ -549,6 +549,21 @@ video {
     opacity: 0.9;
 }
 
+/** Scroll */
+
+.from-right,
+.from-left {
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+.from-right {
+    transform: translate(30px,0px);
+}
+.from-left {
+    transform: translate(-30px,0px);
+}
+
+
 
 
 

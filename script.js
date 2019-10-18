@@ -1,6 +1,6 @@
 $(function() {
     /**
-    * Smooth scrolling to page anchor on click, code trouvé sur https://wprock.fr/blog/javascript-jquery-smooth-scrolling/
+    * Scroll fluide, code trouvé sur https://wprock.fr/blog/javascript-jquery-smooth-scrolling/
     **/
     $("a[href*='#']:not([href='#'])").click(function() {
         if (
@@ -13,5 +13,31 @@ $(function() {
                 $("html, body").animate( { scrollTop: anchor.offset().top }, 1000);
             }
         }
+    });
+});
+
+/** 
+ * Arrivée en cascade lorsqu'on scroll, 
+ * code trouvé sur http://www.ems-tricks.com/tricks/css-js-e-monsite/faire-apparaitre-elements-page-scroll.html 
+ * */
+
+$(document).ready(function(){
+    $(window).on('scroll', function () {
+    
+    var elmt   = $('.from-left, .from-right');
+    var topImg = $('.from-left, .from-right').offset().top;
+    var scroll = $(window).scrollTop();
+    
+        $(elmt).each(function() {
+            
+            var topImg = $(this).offset().top - 600;
+            
+                if ( topImg < scroll ) {
+                
+                $(this).css("transform", "translate(0,0)");
+                $(this).css("opacity", "1");
+                
+                };
+        });
     });
 });
